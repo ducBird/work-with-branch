@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  background-color: #f9f9f9;
+  /* position: relative; */
+}
+
+#header #header-wrapper {
+  /* padding-top: 40px; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+
+#header-wrapper #nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1080px;
+  margin: auto;
+  line-height: 90px;
+  /* background-color: #ccc; */
+  padding: 0 10px 0 10px;
+}
+
+#header-wrapper #nav-main img {
+  width: 80px;
+}
+
+#nav-main #navigation > ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#navigation > ul > li > a {
+  padding: 10px 20px 10px;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #9a9a9a;
+  transition: color 0.5s;
+}
+
+#navigation > ul > li:hover > a {
+  color: #000;
+}
+
+#navigation > ul > li {
+  position: relative;
+}
+
+#navigation .subnav {
+  display: none;
+  position: absolute;
+  left: 25%;
+  top: 100%;
+  min-width: 200px;
+  list-style-type: none;
+}
+
+#navigation > ul > li:hover .subnav {
+  display: block;
+}
+
+#navigation > ul > .li-subnav:hover > a {
+  color: #785eff;
+}
+
+#navigation .subnav {
+  background-color: #fff;
+  box-shadow: 1px 10px 20px 1px #ccc;
+}
+#navigation .subnav li {
+  padding: 0 10px 0 10px;
+  line-height: 40px;
+  border-bottom: 1px groove rgba(228, 224, 224, 0.5);
+}
+
+.subnav li a {
+  text-decoration: none;
+  color: #9a9a9a;
+  transition: color 0.5s;
+}
+
+.subnav li:hover a {
+  color: #000;
+}
+
+#nav-main .login-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-main .login-register a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 40px;
+  line-height: 30px;
+  padding: 7px 30px;
+  margin-right: 15px;
+}
+
+#nav-main .login-register .btnLogin {
+  color: #000;
+  background-color: #fff;
+  transition: box-shadow 0.2s;
+}
+
+#nav-main .login-register .btnLogin:hover {
+  /* box-shadow: 5px 5px 5px 10px rgba (0, 0, 0, 0.5); */
+  box-shadow: 3px 1px 10px #ccc;
+  color: #785eff;
+}
+
+#nav-main .login-register .btnRegister {
+  color: #fff;
+  background-color: mediumorchid;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+#nav-main .login-register .btnRegister:hover {
+  /* box-shadow: 0px 0px 5px 0px rgba (0, 0, 0, 0.1); */
+  box-shadow: 3px 1px 10px #ccc;
+  opacity: 1;
+}
+
+#section #content {
+  position: relative;
+  top: 90px;
+  width: 1080px;
+  margin: auto;
+}
+
+#content #rev-slide {
+  background: url("/resources/img/app-website.png") top center / cover no-repeat;
+  background-position: 100% 0%;
+  background-size: 80%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 600px;
+}
+
+#rev-slide .text-content {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  right: 0%;
+  bottom: 0%;
+  max-width: 500px;
+  max-height: 250px;
+}
+
+#rev-slide .text-content .div-h1 {
+  max-width: 270px;
+  padding-bottom: 40px;
+}
+
+#rev-slide .text-content .btn .btn-use,
+#rev-slide .text-content .btn .btn-download {
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px 35px;
+  border-radius: 40px;
+  margin: 0 15px 0 0;
+}
+
+#rev-slide .text-content .btn .btn-use {
+  color: #fff;
+  background-color: #785eff;
+}
+#rev-slide .text-content .btn .btn-download {
+  color: #785eff;
+  border: 1px solid #785eff;
+  transition: background-color 0.6s;
+  transition: color 0.5s;
+}
+
+#rev-slide .text-content .btn .btn-download:hover {
+  color: #fff;
+  background-color: #785eff;
+}
+
+#content #all-merchants {
+  /* height: auto; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#content #all-merchants .merchants-item {
+  width: 25%;
+  text-align: center;
+  padding: 15px;
+}
+
+#all-merchants .merchants-item img {
+  width: 90px;
+}
+
+#content #all-product {
+  margin: 100px 0 50px 0;
+}
